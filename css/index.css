@@ -4,6 +4,12 @@ body {
 	display: flex;
 	align-items: center;
 	justify-content: space-around;
+	-webkit-user-select: none;
+	-khtml-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	-o-user-select: none;
+	user-select: none;
 }
 span::before {
 	display:inline;
@@ -13,12 +19,6 @@ span {
 	font: 20px "Doppio One", monospace;
 	color: #f0f0f0;
 	cursor: default;
-	-webkit-user-select: none;
-	-khtml-user-select: none;
-	-moz-user-select: none;
-	-ms-user-select: none;
-	-o-user-select: none;
-	user-select: none;
 }
 img {
 	max-width: 480px;
