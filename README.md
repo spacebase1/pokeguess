@@ -2,7 +2,7 @@
 
 - Simple website that outputs random Pokémon from the selected generations
 - Pokémon's name is visible when the cursor is over the image
-- [Website Link](https://poplio883.github.io/)
+- [Website Link](https://spacebase1.github.io/pokeguess/)
 
 ## Options
 
