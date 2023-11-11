@@ -908,7 +908,7 @@
 				"region": "Kanto"
 			}
 		],
-		"checkbox": 0
+		"checkbox": null
 	},
 	{
 		"list": [
@@ -1513,7 +1513,7 @@
 				"region": "Johto"
 			}
 		],
-		"checkbox": 0
+		"checkbox": null
 	},
 	{
 		"list": [
@@ -2328,7 +2328,7 @@
 				"region": "Hoenn"
 			}
 		],
-		"checkbox": 0
+		"checkbox": null
 	},
 	{
 		"list": [
@@ -2975,7 +2975,7 @@
 				"region": "Sinnoh"
 			}
 		],
-		"checkbox": 0
+		"checkbox": null
 	},
 	{
 		"list": [
@@ -3916,7 +3916,7 @@
 				"region": "Unova"
 			}
 		],
-		"checkbox": 0
+		"checkbox": null
 	},
 	{
 		"list": [
@@ -4353,7 +4353,7 @@
 				"region": "Kalos"
 			}
 		],
-		"checkbox": 0
+		"checkbox": null
 	},
 	{
 		"list": [
@@ -4994,7 +4994,7 @@
 				"region": "Unknown"
 			}
 		],
-		"checkbox": 0
+		"checkbox": null
 	},
 	{
 		"list": [
@@ -5155,8 +5155,8 @@
 				"region": "Galar"
 			},
 			{
-				"path": "data/gen8/0555Darmanitam.png",
-				"name": "Darmanitam",
+				"path": "data/gen8/0555Darmanitan.png",
+				"name": "Darmanitan",
 				"number": "555",
 				"region": "Galar"
 			},
@@ -5791,7 +5791,7 @@
 				"region": "Hisui"
 			}
 		],
-		"checkbox": 0
+		"checkbox": null
 	},
 	{
 		"list": [
@@ -6438,6 +6438,6 @@
 				"region": "Paldea"
 			}
 		],
-		"checkbox": 0
+		"checkbox": null
 	}
 ]

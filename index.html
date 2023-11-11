@@ -10,9 +10,9 @@
 <body>
 	<div id="settings-div">
 		<span>Options:</span>
-		<div><input type="checkbox" id="setting1" onclick="refreshName();"><span onclick="spanToggle(1, false)">Show Number</span></div>
-		<div><input type="checkbox" id="setting2" onclick="refreshName();"><span onclick="spanToggle(2, false)">Always Show Name</span></div>
-		<div><input type="checkbox" id="setting3" onclick="refreshName();"><span onclick="spanToggle(3, false)">Always Show Region</span></div>
+		<div><input type="checkbox" id="setting1" onclick="refreshName();"><span onclick="spanToggleSetting(1)">Show Number</span></div>
+		<div><input type="checkbox" id="setting2" onclick="refreshName();"><span onclick="spanToggleSetting(2)">Always Show Name</span></div>
+		<div><input type="checkbox" id="setting3" onclick="refreshName();"><span onclick="spanToggleSetting(3)">Always Show Region</span></div>
 		<button onclick="toggleSilhouette()">Toggle Silhouette</button>
 	</div>
 	<div id="poke-div">
@@ -22,15 +22,15 @@
 		<button onclick="random()">Random</button>
 	</div>
 	<div id="checkbox-div">
-		<div><input type="checkbox" id="gen1-check" checked><span onclick="spanToggle(0, true)">Gen 1</span></div>
-		<div><input type="checkbox" id="gen2-check" checked><span onclick="spanToggle(1, true)">Gen 2</span></div>
-		<div><input type="checkbox" id="gen3-check" checked><span onclick="spanToggle(2, true)">Gen 3</span></div>
-		<div><input type="checkbox" id="gen4-check" checked><span onclick="spanToggle(3, true)">Gen 4</span></div>
-		<div><input type="checkbox" id="gen5-check" checked><span onclick="spanToggle(4, true)">Gen 5</span></div>
-		<div><input type="checkbox" id="gen6-check" checked><span onclick="spanToggle(5, true)">Gen 6</span></div>
-		<div><input type="checkbox" id="gen7-check" checked><span onclick="spanToggle(6, true)">Gen 7</span></div>
-		<div><input type="checkbox" id="gen8-check" checked><span onclick="spanToggle(7, true)">Gen 8</span></div>
-		<div><input type="checkbox" id="gen9-check" checked><span onclick="spanToggle(8, true)">Gen 9</span></div>
+		<div><input type="checkbox" id="gen1-check" onclick="randomNext()" checked><span onclick="spanToggleCheckbox(0)">Gen 1</span></div>
+		<div><input type="checkbox" id="gen2-check" onclick="randomNext()" checked><span onclick="spanToggleCheckbox(1)">Gen 2</span></div>
+		<div><input type="checkbox" id="gen3-check" onclick="randomNext()" checked><span onclick="spanToggleCheckbox(2)">Gen 3</span></div>
+		<div><input type="checkbox" id="gen4-check" onclick="randomNext()" checked><span onclick="spanToggleCheckbox(3)">Gen 4</span></div>
+		<div><input type="checkbox" id="gen5-check" onclick="randomNext()" checked><span onclick="spanToggleCheckbox(4)">Gen 5</span></div>
+		<div><input type="checkbox" id="gen6-check" onclick="randomNext()" checked><span onclick="spanToggleCheckbox(5)">Gen 6</span></div>
+		<div><input type="checkbox" id="gen7-check" onclick="randomNext()" checked><span onclick="spanToggleCheckbox(6)">Gen 7</span></div>
+		<div><input type="checkbox" id="gen8-check" onclick="randomNext()" checked><span onclick="spanToggleCheckbox(7)">Gen 8</span></div>
+		<div><input type="checkbox" id="gen9-check" onclick="randomNext()" checked><span onclick="spanToggleCheckbox(8)">Gen 9</span></div>
 		<button onclick="toggleCheckboxes()">Toggle All</button>
 	</div>
 <script type="text/javascript" src="./scripts/index.js"></script>
