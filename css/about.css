@@ -1,0 +1,59 @@
+body {
+	background-color: #20262c;
+	background-image: url("../data/other/bgalpha.png");
+	background-size: 100vw;
+	margin-top: 3vh;
+	display: flex;
+	flex-flow: column nowrap;
+	justify-content: center;
+	align-items: center;
+	-webkit-user-select: none;
+	-khtml-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	-o-user-select: none;
+	user-select: none;
+}
+
+.main-div {
+	display: flex;
+	flex-flow: column nowrap;
+	align-items: center;
+	row-gap: 3vh;
+	margin-top: 12vh;
+}
+
+.wrap-div {
+	display: flex;
+	flex-flow: row nowrap;
+	column-gap: 10vw;
+}
+
+.sub-div {
+	display: flex;
+	flex-flow: column nowrap;
+	row-gap: 10px;
+}
+
+span {
+	font: 20px "Doppio One", monospace;
+	color: #b2b5b7;
+	cursor: default;
+}
+
+span.title {
+	font-size: 22px;
+	font-weight: bold;
+	text-align: center;
+	color: #f0f0f0;
+}
+
+a {
+	color: #35749b;
+	font: 20px "Doppio One", monospace;
+	text-decoration: none;
+}
+
+a:hover {
+	color: #6dabd2;
+}

@@ -11,8 +11,8 @@ const poke_region = document.getElementById ("poke-region");
 
 // Load JSON, generate 'next'
 fetch ('./data.json')
-    .then ((response) => response.json ())
-    .then ((json) => GENS = json)
+	.then ((response) => response.json ())
+	.then ((json) => GENS = json)
 	.then (() => {
 		for (let i = 0; i < GENS.length; i++) {
 			GENS[i]['checkbox'] = document.getElementById (`gen${i + 1}-check`);
@@ -22,7 +22,7 @@ fetch ('./data.json')
 
 // Generates a new 'next' and downloads its respective image
 function randomNext () {
-    random_gen = randItem (getCheckedGens ());
+	random_gen = randItem (getCheckedGens ());
 	if (random_gen == null) {
 		next = null;
 		return;
@@ -119,4 +119,10 @@ function spanToggleSetting (index) {
 	const element = document.getElementById (`setting${index}`);
 	element.checked = element.checked ? false : true;
 	refreshName ();
+}
+
+// Adjust for low width resolution screens; provisional solution
+if (window.matchMedia ("(min-width: 760px)").matches == false) {
+	document.body.style.flexFlow = "column nowrap";
+	document.getElementsByTagName ("button")[1].style.marginBottom = "10vh";
 }

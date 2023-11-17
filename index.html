@@ -1,27 +1,29 @@
 <!doctype html>
 <html lang="en-US">
 <head>
-	<meta charset="UTF-8" />
-	<meta name="viewport" content="width=device-width" />
-	<link rel="icon" href="./data/icon.ico" type="image/ico">
+	<meta name="description" content="Try to name all the Pokémon!">
+	<meta name="keywords" content="Pokemon, Pokémon, GameFreak, Nintendo, Who's That Pokémon?">
+	<meta name="viewport" content="width=device-width">
+	<meta charset="UTF-8">
+	<link rel="icon" href="./data/other/icon.ico" type="image/ico">
 	<link rel="stylesheet" href="./css/index.css">
 	<title>PokéGuess</title>
 </head>
 <body>
 	<div id="settings-div">
-		<span>Options:</span>
+		<span class="title-span">Options</span>
 		<div><input type="checkbox" id="setting1" onclick="refreshName();"><span onclick="spanToggleSetting(1)">Show Number</span></div>
 		<div><input type="checkbox" id="setting2" onclick="refreshName();"><span onclick="spanToggleSetting(2)">Always Show Name</span></div>
 		<div><input type="checkbox" id="setting3" onclick="refreshName();"><span onclick="spanToggleSetting(3)">Always Show Region</span></div>
 		<button onclick="toggleSilhouette()">Toggle Silhouette</button>
 	</div>
 	<div id="poke-div">
-		<img id="poke-img" src="data/questionMark.png" onmouseenter="showName()" onmouseleave="hideName()">
+		<img id="poke-img" src="./data/other/questionMark.png" onmouseenter="showName()" onmouseleave="hideName()">
 		<span id="poke-name"></span>
 		<span id="poke-region"></span>
 		<button onclick="random()">Random</button>
 	</div>
-	<div id="checkbox-div">
+	<div id="gens-div">
 		<div><input type="checkbox" id="gen1-check" onclick="randomNext()" checked><span onclick="spanToggleCheckbox(0)">Gen 1</span></div>
 		<div><input type="checkbox" id="gen2-check" onclick="randomNext()" checked><span onclick="spanToggleCheckbox(1)">Gen 2</span></div>
 		<div><input type="checkbox" id="gen3-check" onclick="randomNext()" checked><span onclick="spanToggleCheckbox(2)">Gen 3</span></div>
@@ -33,6 +35,8 @@
 		<div><input type="checkbox" id="gen9-check" onclick="randomNext()" checked><span onclick="spanToggleCheckbox(8)">Gen 9</span></div>
 		<button onclick="toggleCheckboxes()">Toggle All</button>
 	</div>
-<script type="text/javascript" src="./scripts/index.js"></script>
+	<a id="about-anchor" href="./about" target="_blank">About</a>
+	<script type="text/javascript" src="./scripts/index.js"></script>
+	<script type="text/javascript" src="./scripts/keybinds.js"></script>
 </body>
 </html>

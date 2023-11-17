@@ -1,9 +1,13 @@
 body {
-	background-color: #222527;
-	margin-top: 3vh;
+	background-color: #20262c;
+	background-image: url("../data/other/bgalpha.png");
+	background-size: 100vw;
+	background-repeat: repeat;
+	margin-top: 2vw;
 	display: flex;
-	align-items: center;
+	flex-flow: row nowrap;
 	justify-content: space-around;
+	align-items: center;
 	-webkit-user-select: none;
 	-khtml-user-select: none;
 	-moz-user-select: none;
@@ -11,67 +15,101 @@ body {
 	-o-user-select: none;
 	user-select: none;
 }
+
 span::before {
 	display:inline;
-    content: "\200D";
- }
+	content: "\200D";
+}
+
 span {
 	font: 20px "Doppio One", monospace;
 	color: #f0f0f0;
 	cursor: default;
 }
-img {
-	max-width: 480px;
-	max-height: 480px;
-	margin-bottom: 15px;
+
+.title-span {
+	text-align: center;
+	font-size: 28px;
+	font-weight: bold;
+	margin-bottom: 20px;
 }
+
+img {
+	width: min(480px, 67vh);
+	height: min(480px, 67vh);
+	margin-bottom: 2vh;
+}
+
 button {
 	border: 2px solid #b2b5b7;
 	color: #f0f0f0;
-	background-color: #353841;
+	background-color: #31353e;
 	border-radius: 5px;
 	padding: 5px 5px;
 	font: bold 20px "Doppio One", monospace;
 	cursor: pointer;
 	margin-top: 20px;
 }
+
 button:hover {
-	color: #222527;
+	color: #20262c;
 	background-color: #b2b5b7;
 }
+
+input {
+	accent-color: #35749b;
+}
+
 #settings-div {
 	display: flex;
-	flex-direction: column;
+	flex-flow: column nowrap;
 	row-gap: 2px;
-	background-color: #424547;
+	background-color: #373f44;
 	padding: 20px;
 	border-radius: 5px;
 }
-#settings-div > span {
-	font-size: 28px;
-	font-weight: bold;
-	margin-bottom: 20px;
-}
+
 #poke-div {
 	display: flex;
-	flex-direction: column;
+	flex-flow: column nowrap;
 	align-items: center;
 }
+
 #poke-div > button {
 	font-size: 22px;
 	padding: 7px 5px;
 }
-#checkbox-div {
+
+#gens-div {
 	display: flex;
-	flex-direction: column;
+	flex-flow: column nowrap;
 	align-items: center;
 	row-gap: 2px;
-	margin: 0px 70px;
+	margin: 0vw 5vw;
 }
+
 #poke-name {
-	font-size: 22px;
+	font-size: 24px;
 }
+
 #poke-region {
-	font-size: 18px;
+	font-size: 19px;
 	color: #b2b5b7;
+}
+
+#about-anchor {
+	position: absolute;
+	bottom: 0;
+	right: 0;
+	margin: 0px 30px 20px 0px;
+	color: #b2b5b7;
+	font: bold 20px "Doppio One", monospace;
+	text-decoration: none;
+	background-color: #2b2f37;
+	padding: 5px;
+	border-radius: 5px;
+}
+
+#about-anchor:hover {
+	color: #f0f0f0;
 }
