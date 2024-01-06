@@ -15,10 +15,11 @@
 		<div><input type="checkbox" id="setting1" onclick="refreshName();"><span onclick="spanToggleSetting(1)">Show Number</span></div>
 		<div><input type="checkbox" id="setting2" onclick="refreshName();"><span onclick="spanToggleSetting(2)">Always Show Name</span></div>
 		<div><input type="checkbox" id="setting3" onclick="refreshName();"><span onclick="spanToggleSetting(3)">Always Show Region</span></div>
+		<div><input type="checkbox" id="setting4"><span onclick="spanToggleSetting(4)">Auto Silhouette Off</span></div>
 		<button onclick="toggleSilhouette()">Toggle Silhouette</button>
 	</div>
 	<div id="poke-div">
-		<img id="poke-img" src="./data/other/questionMark.png" onmouseenter="showName()" onmouseleave="hideName()">
+		<img id="poke-img" src="./data/other/questionMark.png" onmouseenter="showName('mouse')" onmouseleave="hideName()">
 		<span id="poke-name"></span>
 		<span id="poke-region"></span>
 		<button onclick="random()">Random</button>

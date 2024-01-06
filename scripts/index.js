@@ -2,9 +2,11 @@ let GENS;
 let random_gen;
 let current;
 let next;
+let sillhouette_on = false;
 const show_number = document.getElementById ("setting1");
 const always_show = document.getElementById ("setting2");
 const always_region = document.getElementById ("setting3");
+const auto_silhouette_off = document.getElementById ("setting4");
 const poke_img = document.getElementById ("poke-img");
 const poke_name = document.getElementById ("poke-name");
 const poke_region = document.getElementById ("poke-region");
@@ -55,19 +57,23 @@ function getCheckedGens () {
 function refreshName () {
 	if (current == undefined) {return;}
 	if (always_show.checked) {
-		showName ();
+		showName ("func");
 		return;
 	}
 	hideName ();
 }
 
-function showName () {
+function showName (source) {
 	if (current == undefined) {return;}
 	poke_name.innerHTML = show_number.checked ? `#${current["number"]} ${current["name"]}` : current["name"];
 	poke_region.innerHTML = current["region"];
+	if (source == "mouse") {
+		poke_img.style.filter = auto_silhouette_off.checked ? "brightness(1)" : poke_img.style.filter;
+	}
 }
 
 function hideName () {
+	poke_img.style.filter = sillhouette_on ? "brightness(0)" : "brightness(1)";
 	if (current == undefined || always_show.checked) {return;}
 	poke_name.innerHTML = "???";
 	poke_region.innerHTML = always_region.checked ? current["region"] : "";
@@ -106,12 +112,13 @@ function randItem (array) {
 
 function toggleSilhouette () {
 	if (current == undefined) {return;}
-	poke_img.style.filter = poke_img.style.filter == "brightness(0)" ? "brightness(1)" : "brightness(0)"
+	sillhouette_on = sillhouette_on ? false : true;
+	poke_img.style.filter = sillhouette_on ? "brightness(0)" : "brightness(1)";
 }
 
 function spanToggleCheckbox (index) {
 	if (GENS == undefined) {return;}
-	GENS[index]['checkbox'].checked = GENS[index]['checkbox'].checked||GENS[index]['checkbox'].disabled ? false : true;
+	GENS[index]['checkbox'].checked = GENS[index]['checkbox'].checked || GENS[index]['checkbox'].disabled ? false : true;
 	randomNext ();
 }
 

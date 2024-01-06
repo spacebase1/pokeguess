@@ -1,22 +1,26 @@
 document.onkeyup = (e) => {
 	let event = (e || window.event);
-	if (event.code == "KeyK") {
+	if (event.code == "Space") {
 		random ();
 		return
 	}
-	if (event.code == "KeyU") {
+	if (event.code == "KeyJ") {
 		spanToggleSetting (1);
 		return
 	}
-	if (event.code == "KeyI") {
+	if (event.code == "KeyK") {
 		spanToggleSetting (2);
 		return
 	}
-	if (event.code == "KeyO") {
+	if (event.code == "KeyL") {
 		spanToggleSetting (3);
 		return
 	}
-	if (event.code == "KeyJ") {
+	if (event.code == "KeyA") {
+		spanToggleSetting (4);
+		return
+	}
+	if (event.code == "KeyS") {
 		toggleSilhouette ();
 		return
 	}
