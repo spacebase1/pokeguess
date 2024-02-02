@@ -133,3 +133,12 @@ if (window.matchMedia ("(min-width: 760px)").matches == false) {
 	document.body.style.flexFlow = "column nowrap";
 	document.getElementsByTagName ("button")[1].style.marginBottom = "10vh";
 }
+
+// Make elements lose focus after gaining it, so that spacebar only triggers the random button (once)
+document.querySelectorAll("button").forEach (item => {
+    item.addEventListener('focus', (e) => e.target.blur ())
+});
+
+document.querySelectorAll("input").forEach (item => {
+    item.addEventListener('focus', (e) => e.target.blur ())
+});
