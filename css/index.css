@@ -1,3 +1,78 @@
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;700&display=swap');
+
+.regular-font {
+	font-family: "IBM Plex Mono", monospace;
+	font-weight: 400;
+	font-style: normal;
+	font-size: 2em;
+	color: #f0f0f0;
+}
+
+.title-font {
+	font-family: "IBM Plex Mono", monospace;
+	font-weight: 700;
+	font-style: normal;
+	font-size: 2.8em;
+	color: #f0f0f0;
+}
+
+.button-font {
+	font-family: "IBM Plex Mono", monospace;
+	font-weight: 700;
+	font-style: normal;
+	font-size: 2em;
+	color: #f0f0f0;
+	background-color: #31353e;
+}
+
+.button-font:hover {
+	color: #20262c;
+	background-color: #b2b5b7;
+}
+
+.button-font-large {
+	font-family: "IBM Plex Mono", monospace;
+	font-weight: 700;
+	font-style: normal;
+	font-size: 2.4em;
+	color: #f0f0f0;
+	background-color: #31353e;
+}
+
+.button-font-large:hover {
+	color: #20262c;
+	background-color: #b2b5b7;
+}
+
+.poke-name-font {
+	font-family: "IBM Plex Mono", monospace;
+	font-weight: 400;
+	font-style: normal;
+	font-size: 2.4em;
+	color: #f0f0f0;
+}
+
+.poke-region-font {
+	font-family: "IBM Plex Mono", monospace;
+	font-weight: 400;
+	font-style: normal;
+	font-size: 1.9em;
+	color: #b2b5b7;
+}
+
+.about-anchor-font {
+	font-family: "IBM Plex Mono", monospace;
+	font-weight: 700;
+	font-style: normal;
+	font-size: 2em;
+	color: #b2b5b7;
+	background-color: #2b2f37;
+}
+
+.about-anchor-font:hover {
+	color: #f0f0f0;
+}
+
 body {
 	background-color: #20262c;
 	background-image: url("../data/other/bgalpha.png");
@@ -8,6 +83,7 @@ body {
 	flex-flow: row nowrap;
 	justify-content: space-around;
 	align-items: center;
+	font-size: 62.5%;
 	-webkit-user-select: none;
 	-khtml-user-select: none;
 	-moz-user-select: none;
@@ -22,15 +98,11 @@ span::before {
 }
 
 span {
-	font: 20px "Doppio One", monospace;
-	color: #f0f0f0;
 	cursor: default;
 }
 
 .title-span {
 	text-align: center;
-	font-size: 28px;
-	font-weight: bold;
 	margin-bottom: 20px;
 }
 
@@ -42,18 +114,10 @@ img {
 
 button {
 	border: 2px solid #b2b5b7;
-	color: #f0f0f0;
-	background-color: #31353e;
 	border-radius: 5px;
 	padding: 5px 5px;
-	font: bold 20px "Doppio One", monospace;
 	cursor: pointer;
 	margin-top: 20px;
-}
-
-button:hover {
-	color: #20262c;
-	background-color: #b2b5b7;
 }
 
 input {
@@ -76,7 +140,6 @@ input {
 }
 
 #poke-div > button {
-	font-size: 22px;
 	padding: 7px 5px;
 }
 
@@ -88,28 +151,12 @@ input {
 	margin: 0vw 5vw;
 }
 
-#poke-name {
-	font-size: 24px;
-}
-
-#poke-region {
-	font-size: 19px;
-	color: #b2b5b7;
-}
-
 #about-anchor {
 	position: absolute;
 	bottom: 0;
 	right: 0;
 	margin: 0px 30px 20px 0px;
-	color: #b2b5b7;
-	font: bold 20px "Doppio One", monospace;
 	text-decoration: none;
-	background-color: #2b2f37;
 	padding: 5px;
 	border-radius: 5px;
-}
-
-#about-anchor:hover {
-	color: #f0f0f0;
 }

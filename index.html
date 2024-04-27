@@ -11,32 +11,32 @@
 </head>
 <body>
 	<div id="settings-div">
-		<span class="title-span">Options</span>
-		<div><input type="checkbox" id="setting1" onclick="refreshName();"><span onclick="spanToggleSetting(1)">Show Number</span></div>
-		<div><input type="checkbox" id="setting2" onclick="refreshName();"><span onclick="spanToggleSetting(2)">Always Show Name</span></div>
-		<div><input type="checkbox" id="setting3" onclick="refreshName();"><span onclick="spanToggleSetting(3)">Always Show Region</span></div>
-		<div><input type="checkbox" id="setting4"><span onclick="spanToggleSetting(4)">Auto Silhouette Off</span></div>
-		<button onclick="toggleSilhouette()">Toggle Silhouette</button>
+		<span class="title-font title-span">Options</span>
+		<div><input type="checkbox" id="setting1" onclick="refreshName();"><span onclick="spanToggleSetting(1)" class="regular-font">Show Number</span></div>
+		<div><input type="checkbox" id="setting2" onclick="refreshName();"><span onclick="spanToggleSetting(2)" class="regular-font">Always Show Name</span></div>
+		<div><input type="checkbox" id="setting3" onclick="refreshName();"><span onclick="spanToggleSetting(3)" class="regular-font">Always Show Region</span></div>
+		<div><input type="checkbox" id="setting4"><span onclick="spanToggleSetting(4)" class="regular-font">Auto Silhouette Off</span></div>
+		<button onclick="toggleSilhouette()" class="button-font">Toggle Silhouette</button>
 	</div>
 	<div id="poke-div">
 		<img id="poke-img" src="./data/other/questionMark.png" onmouseenter="showName('mouse')" onmouseleave="hideName()">
-		<span id="poke-name"></span>
-		<span id="poke-region"></span>
-		<button onclick="random()">Random</button>
+		<span id="poke-name" class="poke-name-font"></span>
+		<span id="poke-region" class="poke-region-font"></span>
+		<button onclick="random()" class="button-font-large">Random</button>
 	</div>
 	<div id="gens-div">
-		<div><input type="checkbox" id="gen1-check" onclick="randomNext()" checked><span onclick="spanToggleCheckbox(0)">Gen 1</span></div>
-		<div><input type="checkbox" id="gen2-check" onclick="randomNext()" checked><span onclick="spanToggleCheckbox(1)">Gen 2</span></div>
-		<div><input type="checkbox" id="gen3-check" onclick="randomNext()" checked><span onclick="spanToggleCheckbox(2)">Gen 3</span></div>
-		<div><input type="checkbox" id="gen4-check" onclick="randomNext()" checked><span onclick="spanToggleCheckbox(3)">Gen 4</span></div>
-		<div><input type="checkbox" id="gen5-check" onclick="randomNext()" checked><span onclick="spanToggleCheckbox(4)">Gen 5</span></div>
-		<div><input type="checkbox" id="gen6-check" onclick="randomNext()" checked><span onclick="spanToggleCheckbox(5)">Gen 6</span></div>
-		<div><input type="checkbox" id="gen7-check" onclick="randomNext()" checked><span onclick="spanToggleCheckbox(6)">Gen 7</span></div>
-		<div><input type="checkbox" id="gen8-check" onclick="randomNext()" checked><span onclick="spanToggleCheckbox(7)">Gen 8</span></div>
-		<div><input type="checkbox" id="gen9-check" onclick="randomNext()" checked><span onclick="spanToggleCheckbox(8)">Gen 9</span></div>
-		<button onclick="toggleCheckboxes()">Toggle All</button>
+		<div><input type="checkbox" id="gen1-check" onclick="randomNext()" checked><span onclick="spanToggleCheckbox(0)" class="regular-font">Gen 1</span></div>
+		<div><input type="checkbox" id="gen2-check" onclick="randomNext()" checked><span onclick="spanToggleCheckbox(1)" class="regular-font">Gen 2</span></div>
+		<div><input type="checkbox" id="gen3-check" onclick="randomNext()" checked><span onclick="spanToggleCheckbox(2)" class="regular-font">Gen 3</span></div>
+		<div><input type="checkbox" id="gen4-check" onclick="randomNext()" checked><span onclick="spanToggleCheckbox(3)" class="regular-font">Gen 4</span></div>
+		<div><input type="checkbox" id="gen5-check" onclick="randomNext()" checked><span onclick="spanToggleCheckbox(4)" class="regular-font">Gen 5</span></div>
+		<div><input type="checkbox" id="gen6-check" onclick="randomNext()" checked><span onclick="spanToggleCheckbox(5)" class="regular-font">Gen 6</span></div>
+		<div><input type="checkbox" id="gen7-check" onclick="randomNext()" checked><span onclick="spanToggleCheckbox(6)" class="regular-font">Gen 7</span></div>
+		<div><input type="checkbox" id="gen8-check" onclick="randomNext()" checked><span onclick="spanToggleCheckbox(7)" class="regular-font">Gen 8</span></div>
+		<div><input type="checkbox" id="gen9-check" onclick="randomNext()" checked><span onclick="spanToggleCheckbox(8)" class="regular-font">Gen 9</span></div>
+		<button onclick="toggleCheckboxes()" class="button-font">Toggle All</button>
 	</div>
-	<a id="about-anchor" href="./about" target="_blank">About</a>
+	<a id="about-anchor" class="about-anchor-font" href="./about" target="_blank">About</a>
 	<script type="text/javascript" src="./scripts/index.js"></script>
 	<script type="text/javascript" src="./scripts/keybinds.js"></script>
 </body>
