@@ -73,12 +73,19 @@
 	color: #f0f0f0;
 }
 
+html {
+	margin: 0;
+	padding: 0;
+}
+
 body {
 	background-color: #20262c;
 	background-image: url("../data/other/bgalpha.png");
 	background-size: 100vw;
 	background-repeat: repeat;
-	margin-top: 2vw;
+	margin: 8px;
+	width: calc(100vw - 16px);
+	height: calc(100vh - 16px);
 	display: flex;
 	flex-flow: row nowrap;
 	justify-content: space-around;
@@ -117,7 +124,7 @@ button {
 	border-radius: 5px;
 	padding: 5px 5px;
 	cursor: pointer;
-	margin-top: 20px;
+	margin-top: 2vh;
 }
 
 input {
@@ -141,6 +148,7 @@ input {
 
 #poke-div > button {
 	padding: 7px 5px;
+	margin-top: 4vh;
 }
 
 #gens-div {

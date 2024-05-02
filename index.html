@@ -3,9 +3,9 @@
 <head>
 	<meta name="description" content="Try to name all the Pokémon!">
 	<meta name="keywords" content="Pokemon, Pokémon, GameFreak, Nintendo, Who's That Pokémon?">
-	<meta name="viewport" content="width=device-width">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta charset="UTF-8">
-	<link rel="icon" href="./data/other/icon.ico" type="image/ico">
+	<link rel="icon" type="image/x-icon" href="./favicon.ico">
 	<link rel="stylesheet" href="./css/index.css">
 	<title>PokéGuess</title>
 </head>
@@ -15,7 +15,7 @@
 		<div><input type="checkbox" id="setting1" onclick="refreshName();"><span onclick="spanToggleSetting(1)" class="regular-font">Show Number</span></div>
 		<div><input type="checkbox" id="setting2" onclick="refreshName();"><span onclick="spanToggleSetting(2)" class="regular-font">Always Show Name</span></div>
 		<div><input type="checkbox" id="setting3" onclick="refreshName();"><span onclick="spanToggleSetting(3)" class="regular-font">Always Show Region</span></div>
-		<div><input type="checkbox" id="setting4"><span onclick="spanToggleSetting(4)" class="regular-font">Auto Silhouette Off</span></div>
+		<div><input type="checkbox" id="setting4" checked><span onclick="spanToggleSetting(4)" class="regular-font">Auto Silhouette Off</span></div>
 		<button onclick="toggleSilhouette()" class="button-font">Toggle Silhouette</button>
 	</div>
 	<div id="poke-div">
