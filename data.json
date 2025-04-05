@@ -6480,27 +6480,51 @@
 				"region": "Paldea"
 			},
 			{
-				"path": "./data/gen9/Archaludon.png",
+				"path": "./data/gen9/1018Archaludon.png",
 				"name": "Archaludon",
-				"number": "???",
+				"number": "1018",
 				"region": "Paldea"
 			},
 			{
-				"path": "./data/gen9/IronCrown.png",
-				"name": "Iron Crown",
-				"number": "???",
+				"path": "./data/gen9/1019Hydrapple.png",
+				"name": "Hydrapple",
+				"number": "1019",
 				"region": "Paldea"
 			},
 			{
-				"path": "./data/gen9/RagingBolt.png",
+				"path": "./data/gen9/1020GougingFire.png",
+				"name": "Gouging Fire",
+				"number": "1020",
+				"region": "Paldea"
+			},
+			{
+				"path": "./data/gen9/1021RagingBolt.png",
 				"name": "Raging Bolt",
-				"number": "???",
+				"number": "1021",
 				"region": "Paldea"
 			},
 			{
-				"path": "./data/gen9/Terapagos.png",
+				"path": "./data/gen9/1022IronBoulder.png",
+				"name": "Iron Boulder",
+				"number": "1022",
+				"region": "Paldea"
+			},
+			{
+				"path": "./data/gen9/1023IronCrown.png",
+				"name": "Iron Crown",
+				"number": "1023",
+				"region": "Paldea"
+			},
+			{
+				"path": "./data/gen9/1024Terapagos.png",
 				"name": "Terapagos",
-				"number": "???",
+				"number": "1024",
+				"region": "Paldea"
+			},
+			{
+				"path": "./data/gen9/1025Pecharunt.png",
+				"name": "Pecharunt",
+				"number": "1025",
 				"region": "Paldea"
 			}
 		],
