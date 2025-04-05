@@ -128,7 +128,7 @@ function spanToggleSetting (index) {
 	refreshName ();
 }
 
-// Adjust for low width resolution screens; provisional solution
+// Adjust for low width resolution screens; temporary solution
 if (window.matchMedia ("(min-width: 760px)").matches == false) {
 	document.body.style.flexFlow = "column nowrap";
 	document.getElementsByTagName ("button")[1].style.marginBottom = "10vh";
